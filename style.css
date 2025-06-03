@@ -67,76 +67,91 @@ a {
 /* Header Styles */
 .main-header {
     padding: 1rem 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo img {
     height: 80px;
-    margin-right: 1rem;
+    width: auto;
 }
 
 .logo-text h1 {
     font-size: 1.5rem;
     color: var(--primary-color);
+    margin: 0;
     line-height: 1.2;
 }
 
 .logo-text p {
     font-size: 0.9rem;
     color: var(--dark-color);
+    margin: 0;
+}
+
+/* Navbar */
+.main-nav {
+    background: var(--primary-color);
+    padding: 0.5rem 0;
 }
 
 .main-nav .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
 }
 
-.main-nav ul {
+.nav-menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
+    gap: 0.5rem;
 }
 
-.main-nav .search-box {
+.nav-menu li a {
+    color: white;
+    padding: 0.8rem 1rem;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background: var(--secondary-color);
+}
+
+/* Search Box */
+.search-box {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 
-.main-nav .search-box input {
-    padding: 0.5rem;
+.search-box input {
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 3px 0 0 3px;
-    height: 36px;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
 }
 
-.main-nav .search-box button {
+.search-box button {
     background: var(--secondary-color);
     color: white;
     border: none;
-    padding: 0 0.8rem;
-    border-radius: 0 3px 3px 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.main-nav a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 1rem;
-    color: var(--white);
-    transition: all 0.3s ease;
+.search-box button:hover {
+    background: #c5162f;
 }
 
 /* Hero Section */
