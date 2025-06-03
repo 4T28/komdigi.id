@@ -90,12 +90,10 @@ a {
     color: var(--dark-color);
 }
 
-/* Hapus CSS .top-bar (jika ada) */
-
 .main-nav .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .main-nav ul {
@@ -103,17 +101,20 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .main-nav .search-box {
     display: flex;
-    margin-left: auto; /* Posisikan di kanan */
+    align-items: center;
+    margin-left: auto;
 }
 
 .main-nav .search-box input {
     padding: 0.5rem;
     border: none;
     border-radius: 3px 0 0 3px;
+    height: 36px;
 }
 
 .main-nav .search-box button {
@@ -123,25 +124,19 @@ a {
     padding: 0 0.8rem;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
-}
-
-.main-nav {
-    background: var(--primary-color);
-}
-
-.main-nav li {
-    position: relative;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-nav a {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
     color: var(--white);
-    padding: 1rem;
     transition: all 0.3s ease;
-}
-
-.main-nav a:hover {
-    background: var(--secondary-color);
 }
 
 /* Hero Section */
