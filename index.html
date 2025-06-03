@@ -2,49 +2,112 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KomDigi Mini</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KomDigi Expert</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">KomDigi</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Tentang</a></li>
-          <li><a href="#">Layanan</a></li>
-          <li><a href="#">Kontak</a></li>
+  <!-- Header dan Navigasi -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">KomDigi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tentang Kami</a></li>
+              <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Selamat Datang di KomDigi Mini</h2>
-      <p>Platform informasi digital sederhana dengan tampilan modern.</p>
+  <!-- Hero Section -->
+  <section class="bg-dark text-white text-center p-5">
+    <div class="container">
+      <h1 class="display-4">Selamat Datang di KomDigi</h1>
+      <p class="lead">Pusat Digitalisasi Informasi Pemerintah dan Inovasi Teknologi</p>
     </div>
   </section>
 
-  <section class="content">
-    <div class="container">
-      <h2>Tentang Kami</h2>
-      <p>Website ini merupakan versi sederhana dari KomDigi. Dibuat menggunakan HTML dan CSS dengan elemen interaktif dasar.</p>
-      <div class="gallery">
-        <img src="https://via.placeholder.com/300x200" alt="Gambar 1">
-        <img src="https://via.placeholder.com/300x200" alt="Gambar 2">
-        <img src="https://via.placeholder.com/300x200" alt="Gambar 3">
+  <!-- Konten Utama -->
+  <main class="container my-5">
+    <!-- Berita -->
+    <section>
+      <h2 class="mb-4">Berita Terbaru</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+              <h5 class="card-title">Transformasi Digital Pemerintah</h5>
+              <p class="card-text">Pemerintah mendorong percepatan transformasi digital melalui kolaborasi lintas sektor.</p>
+              <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+              <h5 class="card-title">Workshop Literasi Digital</h5>
+              <p class="card-text">Rangkaian workshop untuk meningkatkan pemahaman literasi digital masyarakat.</p>
+              <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+              <h5 class="card-title">Pengembangan SDM TI</h5>
+              <p class="card-text">KomDigi berkomitmen dalam pengembangan SDM unggul di bidang teknologi informasi.</p>
+              <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
+    <!-- Galeri -->
+    <section class="my-5">
+      <h2 class="mb-4">Galeri Kegiatan</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Galeri 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Galeri 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Galeri 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Galeri 4">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4">
     <div class="container">
-      <p>&copy; 2025 KomDigi Mini. All rights reserved.</p>
+      <p class="mb-1">&copy; 2025 KomDigi. All rights reserved.</p>
+      <small>Jl. Digitalisasi No. 123, Jakarta - Indonesia</small>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
