@@ -65,46 +65,6 @@ a {
 }
 
 /* Header Styles */
-.top-bar {
-    background: var(--dark-color);
-    color: var(--white);
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-.top-bar .container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.top-links a {
-    color: var(--white);
-    margin-right: 1rem;
-}
-
-.top-links a:hover {
-    color: var(--secondary-color);
-}
-
-.search-box {
-    display: flex;
-}
-
-.search-box input {
-    padding: 0.3rem;
-    border: none;
-    border-radius: 3px 0 0 3px;
-}
-
-.search-box button {
-    background: var(--secondary-color);
-    color: var(--white);
-    border: none;
-    padding: 0 0.5rem;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-}
-
 .main-header {
     padding: 1rem 0;
 }
@@ -130,13 +90,43 @@ a {
     color: var(--dark-color);
 }
 
-.main-nav {
-    background: var(--primary-color);
+/* Hapus CSS .top-bar (jika ada) */
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .search-box {
+    display: flex;
+    margin-left: auto; /* Posisikan di kanan */
+}
+
+.main-nav .search-box input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.main-nav .search-box button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0 0.8rem;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.main-nav {
+    background: var(--primary-color);
 }
 
 .main-nav li {
